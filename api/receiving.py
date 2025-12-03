@@ -8,6 +8,5 @@ class ReceivingApi(CustomRequester):
     def receiving_movies(self,expected_status=200):
         return self.send_request(
             method="GET",
-            endpoint= CREATE_GET_ENDPOINT,
-            expected_status=expected_status
+            endpoint= CREATE_GET_ENDPOINT
         )
