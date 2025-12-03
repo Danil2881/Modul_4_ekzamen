@@ -5,16 +5,6 @@ import requests
 from Movies.utils.datagenerator import DataGenerator
 
 
-# session_auth = requests.Session()
-
-# @pytest.fixture()
-# def user_login():
-#     session_auth = requests.Session()
-#     responce = session_auth.post(url="https://auth.dev-cinescope.coconutqa.ru/login",json={{"email":"api1@gmail.com","password":"asdqwe123Q"}})
-#     assert responce.status_code == 200, "Статус код не верный"
-#     token = responce.json().get("accessToken")
-#     session_auth.headers.update({"Authorization":f"Bearer {token}"})
-#     return session_auth
 
 @pytest.fixture()
 def json_create_movie():
