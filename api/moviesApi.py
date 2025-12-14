@@ -28,6 +28,12 @@ class Create_movies(CustomRequester):
         )
         return responce
 
+    def receiving_movies(self,expected_status=200):
+        return self.send_request(
+            method="GET",
+            endpoint= CREATE_GET_ENDPOINT
+        )
+
     def delete_movies(self):
         responce = self.send_request(
             method="delete",
